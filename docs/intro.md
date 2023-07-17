@@ -2,15 +2,11 @@
 sidebar_position: 1
 ---
 
-# Introduction
-
-Let's discover **the data science kiosk in less than 5 minutes**.
-
-### Taxonomies
+## Taxonomies
 
 How do we categorise
 
-#### Theme
+### Theme
 
 * sports medicine
   * wellness and training load monitoring
@@ -21,6 +17,6 @@ How do we categorise
 * talent management
 
 
-#### Application
+### Application and Task
 
-#### Task 
+
