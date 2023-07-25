@@ -3,18 +3,17 @@ id: question-22
 title: How to identify the optimal course to steer a sailing boat, accounting
   for the wind direction and speed weather condition?
 theme: sports science
-theme_sub_category: performance analysis
+theme-sub-category: performance analysis
 application: in-game strategy and decision making
-task_solver_1: analyse playing strategies
-data_question_type: descriptive
-categorical_ordinal: categorical_ordinal
-continuous_count: continuous_count
-data_method_1: clustering
-data_method_2: classification
-expert_1: Paul Wu
-expert_2: Richi Nayak
+task-solver-1: analyse playing strategies
+data-question-type: descriptive
+categorical-ordinal: categorical_ordinal
+continuous-count: continuous_count
+data-method-1: clustering
+data-method-2: classification
+expert-1: Paul Wu
+expert-2: Richi Nayak
 reference: https://towardsdatascience.com/how-to-build-an-autonomous-sailboat-using-machine-learning-d112e33ca9e0
-reference_2: https://research.utwente.nl/files/28105597/Improving_Decision_Making_in_Ocean_Race_Sailing_using_Sensor_Data.pdf
+reference-2: https://research.utwente.nl/files/28105597/Improving_Decision_Making_in_Ocean_Race_Sailing_using_Sensor_Data.pdf
 sports: Sailing, surfing
-
 ---

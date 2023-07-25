@@ -2,18 +2,17 @@
 id: question-23
 title: How to identify the optimal pacing strategy for a race?
 theme: sports science
-theme_sub_category: performance analysis
+theme-sub-category: performance analysis
 application: in-game strategy and decision making
-task_solver_1: analyse playing strategies
+task-solver-1: analyse playing strategies
 empty: Predict performance
-data_question_type: descriptive
-continuous_count: continuous_count
-data_method_1: clustering
-data_method_2: classification
-expert_1: Paul Wu
-expert_2: Richi Nayak
+data-question-type: descriptive
+continuous-count: continuous_count
+data-method-1: clustering
+data-method-2: classification
+expert-1: Paul Wu
+expert-2: Richi Nayak
 reference: |
   https://www.tandfonline.com/doi/full/10.1080/02640414.2012.701759
 sports: Race
-
 ---

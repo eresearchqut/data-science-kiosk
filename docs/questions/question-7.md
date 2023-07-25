@@ -3,26 +3,25 @@ id: question-7
 title: How does the menstrual cycle influences sports performance, sleep,
   recovery, strength and injury?
 theme: sports medicine
-theme_sub_category: injury and rehabilitation
+theme-sub-category: injury and rehabilitation
 application: injury risk mitigation and modelling
-task_solver_1: analyse injury and rehabilitation patterns
-data_question_type: explorative
-categorical_ordinal: categorical_ordinal
-continuous_count: |
+task-solver-1: analyse injury and rehabilitation patterns
+data-question-type: explorative
+categorical-ordinal: categorical_ordinal
+continuous-count: |
   continuous_count
-time_series_longitudinal: time-series_longitudinal
-data_method_1: Bayesian methods
-data_method_2: State space model
-data_method_3: clustering
-data_expertise_required_1: Bayesian statistics
-data_expertise_required_2: state space model
-data_expertise_required_3: clustering
-datasets_description: athletes menstrual cycle record and associated
+time-series-longitudinal: time-series_longitudinal
+data-method-1: Bayesian methods
+data-method-2: State space model
+data-method-3: clustering
+data-expertise-required-1: Bayesian statistics
+data-expertise-required-2: state space model
+data-expertise-required-3: clustering
+datasets-description: athletes menstrual cycle record and associated
   performance, sleep, recovery, strength and injury
-expert_1: Paul Wu
-expert_2: Richi Nayak
+expert-1: Paul Wu
+expert-2: Richi Nayak
 reference: https://bmjopensem.bmj.com/content/7/3/e001047
-reference_2: https://www.frontiersin.org/articles/10.3389/fphys.2021.761760/full
-reference_3: https://pubmed.ncbi.nlm.nih.gov/32661839/
-
+reference-2: https://www.frontiersin.org/articles/10.3389/fphys.2021.761760/full
+reference-3: https://pubmed.ncbi.nlm.nih.gov/32661839/
 ---

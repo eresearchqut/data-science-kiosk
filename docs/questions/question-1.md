@@ -3,19 +3,18 @@ id: question-1
 title: How to identify the level of stress and well-being from a training diary
   or journal?
 theme: sports medicine
-theme_sub_category: wellness and training load monitoring
+theme-sub-category: wellness and training load monitoring
 application: athlete's readiness
-task_solver_1: analyse injury and rehabilitation patterns
-data_question_type: explorative
+task-solver-1: analyse injury and rehabilitation patterns
+data-question-type: explorative
 text: text
-data_method_1: text mining
-data_method_2: cognitive modelling from language
-data_expertise_required_1: cognitive modelling
-data_expertise_required_2: text mining
-data_expertise_required_3: psychosocial model
-datasets_description: reflective journals with text or audio input
-expert_1: Andrew Gibbson
-expert_2: Divya Mehta
+data-method-1: text mining
+data-method-2: cognitive modelling from language
+data-expertise-required-1: cognitive modelling
+data-expertise-required-2: text mining
+data-expertise-required-3: psychosocial model
+datasets-description: reflective journals with text or audio input
+expert-1: Andrew Gibbson
+expert-2: Divya Mehta
 reference: http://goingok.org/
-
 ---

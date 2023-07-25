@@ -3,20 +3,19 @@ id: question-20
 title: How to identify the optimal training load of an athlete, in order to
   reduce injury risk and/ improve performance?
 theme: sports medicine
-theme_sub_category: injury and rehabilitation
+theme-sub-category: injury and rehabilitation
 application: injury risk mitigation and modelling
-task_solver_1: analyse injury and rehabilitation patterns
-data_question_type: predictive
-categorical_ordinal: categorical_ordinal
-continuous_count: continuous_count
-time_series_longitudinal: time-series_longitudinal
-data_method_1: Bayesian methods
-data_method_2: classification
-data_method_3: state space model
-data_expertise_required_1: Bayesian statistics
-data_expertise_required_2: state space model
-data_expertise_required_3: classification
-expert_1: Paul Wu
+task-solver-1: analyse injury and rehabilitation patterns
+data-question-type: predictive
+categorical-ordinal: categorical_ordinal
+continuous-count: continuous_count
+time-series-longitudinal: time-series_longitudinal
+data-method-1: Bayesian methods
+data-method-2: classification
+data-method-3: state space model
+data-expertise-required-1: Bayesian statistics
+data-expertise-required-2: state space model
+data-expertise-required-3: classification
+expert-1: Paul Wu
 reference: https://pubmed.ncbi.nlm.nih.gov/28601588/
-
 ---

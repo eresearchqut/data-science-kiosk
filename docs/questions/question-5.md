@@ -3,23 +3,22 @@ id: question-5
 title: How to predict the expected level of performance output based on
   athlete's biometrics data?
 theme: sports medicine
-theme_sub_category: wellness and training load monitoring
+theme-sub-category: wellness and training load monitoring
 application: athlete's readiness
-task_solver_1: predict performance
-data_question_type: predictive
-categorical_ordinal: categorical_ordinal
-continuous_count: |
+task-solver-1: predict performance
+data-question-type: predictive
+categorical-ordinal: categorical_ordinal
+continuous-count: |
   continuous_count
-data_method_1: clustering
-data_method_2: classification
-data_expertise_required_1: medical signal processing
-data_expertise_required_2: clustering
-data_expertise_required_3: classification
-datasets_description: individual athlete longitudinal dataset with biometrics
+data-method-1: clustering
+data-method-2: classification
+data-expertise-required-1: medical signal processing
+data-expertise-required-2: clustering
+data-expertise-required-3: classification
+datasets-description: individual athlete longitudinal dataset with biometrics
   data and performance output
-expert_1: Richi Nayak
-expert_2: Dimitri Perrin
+expert-1: Richi Nayak
+expert-2: Dimitri Perrin
 reference: https://journals.humankinetics.com/view/journals/ijspp/13/1/article-p95.xml
-reference_2: https://www.tandfonline.com/doi/full/10.1080/02640414.2015.1119295
-
+reference-2: https://www.tandfonline.com/doi/full/10.1080/02640414.2015.1119295
 ---

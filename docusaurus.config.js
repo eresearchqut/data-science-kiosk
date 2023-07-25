@@ -56,6 +56,7 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     docItemComponent: '@site/src/components/docs/docItem.tsx',
+
                     async sidebarItemsGenerator({
                                                     defaultSidebarItemsGenerator,
                                                     ...args
