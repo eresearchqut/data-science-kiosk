@@ -1,0 +1,20 @@
+---
+question: How to reduce talent development cost?
+theme: sports science
+theme_sub_category: talent identification and career trajectory
+application: talent identification and career trajectory
+task_solver_1: Predict athletes’ progression trajectories
+data_question_type: predictive
+categorical_ordinal: categorical_ordinal
+continuous_count: continuous_count
+data_method_1: discriminant analysis
+data_method_2: Kohonen feature maps
+data_method_3: multilayer perceptron
+data_method_4: artificial neural network
+data_expertise_required_1: discriminant analysis
+data_expertise_required_2: Kohonen feature maps
+data_expertise_required_3: multilayer perceptron
+expert_1: Paul Wu
+expert_2: Richi Nayak
+reference: https://www.tandfonline.com/doi/abs/10.1080/02640414.2016.1192669?journalCode=rjsp20
+---

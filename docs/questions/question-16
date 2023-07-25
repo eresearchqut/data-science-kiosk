@@ -1,0 +1,20 @@
+---
+question: How to select players to form a team with higher winning probability?
+theme: sports science
+theme_sub_category: performance analysis
+application: performance/ game outcome prediction
+task_solver_1: predict performance
+data_question_type: predictive
+categorical_ordinal: categorical_ordinal
+continuous_count: continuous_count
+data_method_1: clustering
+data_method_2: classification
+data_method_3: neural network
+data_expertise_required_1: clustering
+data_expertise_required_2: classification
+datasets_description: dataset with team selection, opposing team selection and performance outcome
+expert_1: Richi Nayak
+reference: >
+  https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0254538
+reference_2: "https://doi.org/10.1016/j.eswa.2008.06.088 "
+---
