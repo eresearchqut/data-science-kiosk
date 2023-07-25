@@ -45,7 +45,7 @@ const config = {
     },
 
     plugins: [
-        require.resolve('@cmfcmf/docusaurus-search-local')
+        require.resolve('@cmfcmf/docusaurus-search-local'),
     ],
 
     presets: [
@@ -56,7 +56,6 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     docItemComponent: '@site/src/components/docs/docItem.tsx',
-
                     async sidebarItemsGenerator({
                                                     defaultSidebarItemsGenerator,
                                                     ...args
@@ -65,16 +64,15 @@ const config = {
                         const sidebarItems = await defaultSidebarItemsGenerator(args);
                         return reverseSidebarItems(sidebarItems);
                     },
-
                 },
-
                 blog: {
-                    showReadingTime: true,
+                    showReadingTime: false,
+                    path: './about',
+                    routeBasePath: 'about'
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
-                },
-
+                }
             }),
         ],
     ],
@@ -97,22 +95,17 @@ const config = {
                         position: 'left',
                         label: 'Kiosk',
                     },
-                    {to: '/blog', label: 'Blog', position: 'left'},
-                    {
-                        href: 'https://github.com/eresearchqut/data-science-kiosk',
-                        label: 'GitHub',
-                        position: 'right',
-                    },
+                    {to: '/about', label: 'About', position: 'left'}
                 ],
             },
             footer: {
                 style: 'dark',
                 links: [
                     {
-                        title: 'Docs',
+                        title: 'Kiosk',
                         items: [
                             {
-                                label: 'Tutorial',
+                                label: 'Using the Kiosk',
                                 to: '/docs/intro',
                             },
                         ],
@@ -130,8 +123,8 @@ const config = {
                         title: 'More',
                         items: [
                             {
-                                label: 'Blog',
-                                to: '/blog',
+                                label: 'About',
+                                to: '/about',
                             },
                             {
                                 label: 'GitHub',
