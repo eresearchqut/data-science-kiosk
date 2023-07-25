@@ -1,0 +1,22 @@
+---
+id: question-19
+title: How to identify talents based on physical attributes and other characteristics?
+theme: talent management
+theme_sub_category: talent identification and career trajectory
+application: talent identification and career trajectory
+task_solver_1: predict athletes’ progression trajectories
+data_question_type: descriptive
+categorical_ordinal: categorical_ordinal
+continuous_count: continuous_count
+data_method_1: clustering
+data_method_2: association
+data_expertise_required_1: clustering
+data_expertise_required_2: association
+data_expertise_required_3: classification
+datasets_description: historical data of athletes performance throughout development stage
+expert_1: Richi Nayak
+expert_2: Dimitri Perrin
+reference: |
+  https://www.sciencedirect.com/science/article/abs/pii/S1440244014001455
+
+---

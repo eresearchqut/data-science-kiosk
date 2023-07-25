@@ -1,0 +1,25 @@
+---
+id: question-26
+title: How to map out shot slection and passing patterns in team sports?
+theme: sports science
+theme_sub_category: computer vision
+task_solver_1: recognise event or actions from computer vision
+empty: predict performance
+data_question_type: descriptive
+categorical_ordinal: categorical_ordinal
+continuous_count: continuous_count
+spatio_temporal: spatio-temproal
+image_or_video: image or video
+data_method_1: Athlete position detection
+data_method_2: Ball trajectory detection
+data_method_3: deep learning
+data_method_4: clustering
+data_method_5: dynamic time wrapping
+expert_1: Simon Denman
+reference: https://journals.sagepub.com/doi/abs/10.1177/17479541211033078?journalCode=spoa
+reference_2: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0272848
+reference_3: https://blog.acolyer.org/2016/05/11/searching-and-mining-trillions-of-time-series-subsequences-under-dynamic-time-warping/
+sports: Basketball
+empty_1: https://sciendo.com/article/10.2478/ijcss-2019-0004
+
+---

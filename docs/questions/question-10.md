@@ -1,0 +1,19 @@
+---
+id: question-10
+title: How to benchmark athletes' performance based on their physical performance?
+theme: sports science
+theme_sub_category: performance analysis
+application: skill acquisition and coaching
+empty: predict athlete's progression trajectories
+data_question_type: descriptive
+categorical_ordinal: categorical_ordinal
+continuous_count: continuous_count
+data_method_1: clustering
+data_expertise_required_1: clustering
+datasets_description: continuous performance data over time with effect from
+  environment (e.g., wind, current etc)
+expert_1: Paul Wu
+reference: "https://doi.org/10.1080/17461391.2014.893020 "
+reference_2: https://doi.org/10.1123/ijspp.2014-0431
+
+---
