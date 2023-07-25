@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdata_science_kiosk=self.webpackChunkdata_science_kiosk||[]).push([[5490],{2797:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/data-science-kiosk/blog/tags/docusaurus","allTagsPath":"/data-science-kiosk/blog/tags","count":4}')}}]);

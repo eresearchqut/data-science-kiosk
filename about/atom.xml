@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://eresearchqut.github.io/data-science-kiosk/about</id>
+    <title>QUT - Data Science Kiosk Blog</title>
+    <updated>2023-06-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://eresearchqut.github.io/data-science-kiosk/about"/>
+    <subtitle>QUT - Data Science Kiosk Blog</subtitle>
+    <icon>https://eresearchqut.github.io/data-science-kiosk/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[About the Data Science Kiosk]]></title>
+        <id>https://eresearchqut.github.io/data-science-kiosk/about/about</id>
+        <link href="https://eresearchqut.github.io/data-science-kiosk/about/about"/>
+        <updated>2023-06-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lets add some content about the project here]]></summary>
+        <content type="html"><![CDATA[<p>Lets add some content about the project here</p>]]></content>
+        <author>
+            <name>Kate Yung</name>
+            <uri>https://orcid.org/0000-0003-1906-4111</uri>
+        </author>
+        <category label="data-science" term="data-science"/>
+        <category label="kiosk" term="kiosk"/>
+    </entry>
+</feed>
