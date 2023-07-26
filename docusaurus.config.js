@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const fs = require("fs");
 
 function reverseSidebarItems(items) {
     const result = items.map((item) => {
@@ -46,6 +47,45 @@ const config = {
 
     plugins: [
         require.resolve('@cmfcmf/docusaurus-search-local'),
+        [
+            './plugins/docs-plugin',
+            {
+                sidebarPath: require.resolve('./sidebars.js'),
+                docItemComponent: '@site/src/components/docs/docItem.tsx',
+                path: "./docs",
+                editCurrentVersion: false,
+                editLocalizedFiles: false,
+                routeBasePath: "docs",
+                tagsBasePath: "tags",
+                include: [
+                    "**/*.{md,mdx}"
+                ],
+                exclude: [
+                    "**/_*.{js,jsx,ts,tsx,md,mdx}",
+                    "**/_*/**",
+                    "**/*.test.{js,jsx,ts,tsx}",
+                    "**/__tests__/**"
+                ],
+                sidebarCollapsible: true,
+                sidebarCollapsed: true,
+                docLayoutComponent: "@theme/DocPage",
+                docTagsListComponent: "@theme/DocTagsListPage",
+                docTagDocListComponent: "@theme/DocTagDocListPage",
+                docCategoryGeneratedIndexComponent: "@theme/DocCategoryGeneratedIndexPage",
+                remarkPlugins: [],
+                rehypePlugins: [],
+                beforeDefaultRemarkPlugins: [],
+                beforeDefaultRehypePlugins: [],
+                admonitions: true,
+                showLastUpdateTime: false,
+                showLastUpdateAuthor: false,
+                includeCurrentVersion: true,
+                disableVersioning: false,
+                versions: {},
+                breadcrumbs: true,
+                id: "default"
+            }
+        ],
     ],
 
     presets: [
@@ -53,18 +93,11 @@ const config = {
             'classic',
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
-                docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    docItemComponent: '@site/src/components/docs/docItem.tsx',
-                    async sidebarItemsGenerator({
-                                                    defaultSidebarItemsGenerator,
-                                                    ...args
-                                                }) {
-
-                        const sidebarItems = await defaultSidebarItemsGenerator(args);
-                        return reverseSidebarItems(sidebarItems);
-                    },
-                },
+                docs: false,
+                // docs: {
+                //     sidebarPath: require.resolve('./sidebars.js'),
+                //     docItemComponent: '@site/src/components/docs/docItem.tsx'
+                // },
                 blog: {
                     showReadingTime: false,
                     path: './about',
@@ -89,12 +122,12 @@ const config = {
                     src: 'img/logo.png',
                 },
                 items: [
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'kioskSidebar',
-                        position: 'left',
-                        label: 'Kiosk',
-                    },
+                    // {
+                    //     type: 'docSidebar',
+                    //     sidebarId: 'kioskSidebar',
+                    //     position: 'left',
+                    //     label: 'Kiosk',
+                    // },
                     {to: '/about', label: 'About', position: 'left'}
                 ],
             },

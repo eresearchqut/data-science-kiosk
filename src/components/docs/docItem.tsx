@@ -8,7 +8,6 @@ import DocItemLayout from '@theme/DocItem/Layout';
 import type {Props} from '@theme/DocItem';
 import {DocFrontMatter} from "@docusaurus/plugin-content-docs";
 
-
 interface TagsPops extends Pick<BadgeProps, 'colorScheme'> {
     frontMatter: DocFrontMatter;
     prefix: string,
@@ -52,15 +51,10 @@ export default function DocItem(props: Props): JSX.Element {
     const MDXComponent = props.content;
     return (
         <DocProvider content={props.content}>
-
             <DocItemMetadata/>
-
             <DocItemLayout>
-
                 <DocItemContent {...props}/>
             </DocItemLayout>
-
-
         </DocProvider>
     );
 }
