@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdata_science_kiosk=self.webpackChunkdata_science_kiosk||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"About the Data Science Kiosk","permalink":"/data-science-kiosk/about/about"}]}')}}]);
