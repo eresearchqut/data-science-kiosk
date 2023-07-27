@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import Layout from '@theme/Layout';
 import {LoadedContent} from "@docusaurus/plugin-content-docs";
+import DocItem from "@theme/DocItem";
 
 
 function TriageHeader() {
@@ -28,10 +29,10 @@ function TriageSection() {
 }
 
 export interface TriageProps {
-    content: LoadedContent
+    readonly questions: readonly { readonly content: any }[];
 }
 
-export default function Triage({content}: TriageProps): JSX.Element {
+export default function Triage({questions}: any): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
@@ -39,7 +40,7 @@ export default function Triage({content}: TriageProps): JSX.Element {
             description="Description will go into a meta tag in <head />">
             <TriageHeader/>
             <main>
-                <pre></pre>
+                {questions.map((question) => <pre>{JSON.stringify(question)}</pre>)}
             </main>
         </Layout>
     );

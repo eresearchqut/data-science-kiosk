@@ -11,28 +11,26 @@ async function docsPluginEnhanced(context, options) {
     return {
         ...docsPluginInstance,
         async contentLoaded({content, actions}) {
-            const {addRoute} = actions;
+            const {addRoute, createData} = actions;
             const {loadedVersions} = content;
             const [current] = loadedVersions;
             const {docs} = current;
-            await addRoute({
-                path: "/triage",
-                exact: true,
-                component: "@site/src/components/Triage",
-                modules: {
-                    docs: docs.map((doc) => ({
-                        content: {
-                            __import: true,
-                            // The markdown file for the blog post will be loaded by webpack
-                            path: doc.source,
-                            query: {
-                                truncated: true,
-                            },
-                        },
-                    }))
-                }
-            });
-            return docsPluginInstance.contentLoaded({content, actions});
+
+            const questionsPath = await createData(
+                "questions.json",
+                JSON.stringify(docs.map((docMetadata) => docMetadata.frontMatter))
+            );
+
+            return docsPluginInstance.contentLoaded({content, actions}).then(() => {
+                addRoute({
+                    path: "/data-science-kiosk/triage",
+                    exact: true,
+                    component: '@site/src/components/docs/triage.tsx',
+                    modules: {
+                        questions: questionsPath
+                    }
+                });
+            })
         }
     };
 
