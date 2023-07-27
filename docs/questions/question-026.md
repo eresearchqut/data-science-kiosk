@@ -8,7 +8,7 @@ empty: predict performance
 data-question-type: descriptive
 categorical-ordinal: categorical_ordinal
 continuous-count: continuous_count
-spatio-temporal: spatio-temproal
+spatio-temporal: spatio-temporal
 image-or-video: image or video
 data-method-1: Athlete position detection
 data-method-2: Ball trajectory detection

@@ -9,7 +9,7 @@ task-solver-1: predict performance
 empty: recognise event or actions from computer vision
 data-question-type: descriptive
 continuous-count: continuous_count
-spatio-temporal: spatio-temproal
+spatio-temporal: spatio-temporal
 image-or-video: image or video
 data-method-1: classification (decision trees)
 data-method-2: computer vision analysis (optional)

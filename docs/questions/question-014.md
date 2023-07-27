@@ -7,7 +7,7 @@ application: computer vision
 task-solver-1: recognise event or actions from computer vision
 data-question-type: descriptive
 categorical-ordinal: categorical_ordinal
-spatio-temporal: spatio-temproal
+spatio-temporal: spatio-temporal
 image-or-video: image or video
 data-method-1: clustering
 data-method-2: classification

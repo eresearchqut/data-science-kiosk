@@ -52,38 +52,6 @@ const config = {
             {
                 sidebarPath: require.resolve('./sidebars.js'),
                 docItemComponent: '@site/src/components/docs/docItem.tsx',
-                path: "./docs",
-                editCurrentVersion: false,
-                editLocalizedFiles: false,
-                routeBasePath: "docs",
-                tagsBasePath: "tags",
-                include: [
-                    "**/*.{md,mdx}"
-                ],
-                exclude: [
-                    "**/_*.{js,jsx,ts,tsx,md,mdx}",
-                    "**/_*/**",
-                    "**/*.test.{js,jsx,ts,tsx}",
-                    "**/__tests__/**"
-                ],
-                sidebarCollapsible: true,
-                sidebarCollapsed: true,
-                docLayoutComponent: "@theme/DocPage",
-                docTagsListComponent: "@theme/DocTagsListPage",
-                docTagDocListComponent: "@theme/DocTagDocListPage",
-                docCategoryGeneratedIndexComponent: "@theme/DocCategoryGeneratedIndexPage",
-                remarkPlugins: [],
-                rehypePlugins: [],
-                beforeDefaultRemarkPlugins: [],
-                beforeDefaultRehypePlugins: [],
-                admonitions: true,
-                showLastUpdateTime: false,
-                showLastUpdateAuthor: false,
-                includeCurrentVersion: true,
-                disableVersioning: false,
-                versions: {},
-                breadcrumbs: true,
-                id: "default"
             }
         ],
     ],
