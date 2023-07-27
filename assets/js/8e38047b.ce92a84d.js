@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdata_science_kiosk=self.webpackChunkdata_science_kiosk||[]).push([[9655],{7656:a=>{a.exports=JSON.parse('[{"label":"data-science","permalink":"/data-science-kiosk/about/tags/data-science","count":1},{"label":"kiosk","permalink":"/data-science-kiosk/about/tags/kiosk","count":1}]')}}]);
