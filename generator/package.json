@@ -1,0 +1,26 @@
+{
+  "name": "data-science-kiosk-doc-gen",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "generate": "ts-node src/generate-docs.ts"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "node-xlsx": "^0.23.0",
+    "typescript": "^5.1.6",
+    "ts-node": "^10.9.1",
+    "@types/node": "^20.4.2",
+    "yaml": "^2.3.1",
+    "lodash": "^4.17.21"
+  },
+  "browserslist": {
+
+  },
+  "engines": {
+    "node": ">=16.14"
+  }
+}

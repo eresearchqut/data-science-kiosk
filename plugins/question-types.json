@@ -1,0 +1,32 @@
+[
+  {
+    "id": "descriptive",
+    "label": "Descriptive question",
+    "definition": "A question that seeks to summarise a characteristic of a set of data"
+  },
+  {
+    "id": "exploration",
+    "label": "Explorative question",
+    "definition": "A question that find patterns, trends, or relationships between variables.s"
+  },
+  {
+    "id": "advanced-insights",
+    "label": "Advanced insights question",
+    "definition": "A question that aims to explore and identify important variables that affecting outcome. Or to cluster the data or fit the data in a model"
+  },
+  {
+    "id": "predictive",
+    "label": "Predictive question",
+    "definition": "A question that seeks to predict the outcome of a scenario"
+  },
+  {
+    "id": "casual",
+    "label": "Causal question",
+    "definition": "A question that asks whether changing one factor will change another factor"
+  },
+  {
+    "id": "mechanistic",
+    "label": "Mechanistic",
+    "definition": "A question that aims to answer the how question"
+  }
+]

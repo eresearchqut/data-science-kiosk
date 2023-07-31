@@ -1,7 +1,6 @@
 import React from 'react';
-import {DocProvider, useDoc, useColorMode} from '@docusaurus/theme-common/internal';
-import {Badge, BadgeProps, Box, ChakraProvider, Stack} from "@chakra-ui/react";
-import filter from 'lodash/filter'
+import {DocProvider, useColorMode, useDoc} from '@docusaurus/theme-common/internal';
+import {Badge, BadgeProps, Box, Stack} from "@chakra-ui/react";
 import startCase from 'lodash/startCase'
 import DocItemMetadata from '@theme/DocItem/Metadata';
 import DocItemLayout from '@theme/DocItem/Layout';
@@ -10,15 +9,15 @@ import {DocFrontMatter} from "@docusaurus/plugin-content-docs";
 
 interface TagsPops extends Pick<BadgeProps, 'colorScheme'> {
     frontMatter: DocFrontMatter;
-    prefix: string,
+    key: string,
 };
 
-const Tags: React.FC<TagsPops> = ({frontMatter, prefix, colorScheme}) => {
-    const tags: string[] = filter(frontMatter, (value, key) => key.startsWith(prefix)) as string[];
+const Tags: React.FC<TagsPops> = ({frontMatter, key, colorScheme}) => {
+    const tags = frontMatter[key]
     if (tags && tags.length > 0) {
         return (
             <Stack direction='row'>
-                <Badge variant={"ghost"} colorScheme={colorScheme}>{startCase(prefix)}</Badge>:
+                <Badge variant={"ghost"} colorScheme={colorScheme}>{startCase(key)}</Badge>:
                 {
                     tags.map((tag: string) => <Badge variant={"outline"} colorScheme={colorScheme}>{tag}</Badge>)
                 }
@@ -33,17 +32,17 @@ const DocItemContent: React.FC<Props> = ({content: MDXPageContent}) => {
     const {frontMatter} = useDoc();
     const {colorMode} = useColorMode();
     return (
-        <ChakraProvider>
-            <Stack>
-                <Tags frontMatter={frontMatter} prefix={"data-expertise"} colorScheme={'green'}/>
-                <Tags frontMatter={frontMatter} prefix={"data-method"} colorScheme={'orange'}/>
-                <Tags frontMatter={frontMatter} prefix={"theme"} colorScheme={'messenger'}/>
-                <Tags frontMatter={frontMatter} prefix={"task-solver"} colorScheme={'pink'}/>
-                <Box m={1}>
-                    <MDXPageContent/>
-                </Box>
-            </Stack>
-        </ChakraProvider>
+
+        <Stack>
+            <Tags frontMatter={frontMatter} key={"dataExpertises"} colorScheme={'green'}/>
+            <Tags frontMatter={frontMatter} key={"dataMethods"} colorScheme={'orange'}/>
+            <Tags frontMatter={frontMatter} key={"themes"} colorScheme={'messenger'}/>
+            <Tags frontMatter={frontMatter} key={"taskSolvers"} colorScheme={'pink'}/>
+            <Box m={1}>
+                <MDXPageContent/>
+            </Box>
+        </Stack>
+
     );
 }
 

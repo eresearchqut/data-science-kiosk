@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sports-medicine",
+    "label": "Sports Medicine"
+  },
+  {
+    "id": "sports-science",
+    "label": "Sports Science"
+  },
+  {
+    "id": "talent-management",
+    "label": "Talent Management"
+  }
+]

@@ -106,11 +106,16 @@ const config = {
                         title: 'Kiosk',
                         items: [
                             {
-                                label: 'Using the Kiosk',
-                                to: '/docs/intro',
+                                label: 'Start Here!',
+                                to: '/kiosk',
+                            },
+                            {
+                                label: 'All Questinos',
+                                to: '/docs/category/questions',
                             },
                         ],
                     },
+
                     {
                         title: 'Community',
                         items: [
