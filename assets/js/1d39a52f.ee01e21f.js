@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdata_science_kiosk=self.webpackChunkdata_science_kiosk||[]).push([[3650],{8545:e=>{e.exports=JSON.parse('[{"id":"sports-medicine","label":"Sports Medicine"},{"id":"sports-science","label":"Sports Science"},{"id":"talent-management","label":"Talent Management"}]')}}]);
