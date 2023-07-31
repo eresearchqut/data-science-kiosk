@@ -61,7 +61,7 @@ export default function Kiosk({docMetadata, themes, dataTypes, questionTypes, ..
             title={`${siteConfig.title}`}
             description="Description will go into a meta tag in <head />">
             <div className="container">
-                <Stack>
+                <Stack mb={4}>
                     {state.step === 'theme' &&
                         <ScaleFade
                             initialScale={0.95}
@@ -84,7 +84,6 @@ export default function Kiosk({docMetadata, themes, dataTypes, questionTypes, ..
                             key={'data-type-ids'}
                             initialScale={0.95}
                             in={true}
-
                         >
                             <Heading mt={2}>Which best describe the type(s) of data you have?</Heading>
                             <CheckboxGroup
@@ -112,7 +111,7 @@ export default function Kiosk({docMetadata, themes, dataTypes, questionTypes, ..
                                             ...current,
                                             step: 'questionTypes'
                                         }))}>{state.dataTypes?.length > 0 ? 'Next' : 'Skip'}</Button>
-                                <Button colorScheme='teal' variant={'ghost'} leftIcon={<RepeatIcon/>}
+                                <Button colorScheme='teal' variant={'outline'} leftIcon={<RepeatIcon/>}
                                         onClick={() => setState(() => ({step: 'theme'}))}>Reset</Button>
                             </Flex>
                         </ScaleFade>
@@ -145,7 +144,7 @@ export default function Kiosk({docMetadata, themes, dataTypes, questionTypes, ..
                                 </Stack>
                             </CheckboxGroup>
                             <Flex alignItems='center' gap='2' mt={4}>
-                                <Button colorScheme='teal' variant={'ghost'} leftIcon={<RepeatIcon/>}
+                                <Button colorScheme='teal' variant={'outline'} leftIcon={<RepeatIcon/>}
                                         onClick={() => setState(() => ({step: 'theme'}))}>Reset</Button>
                             </Flex>
                         </ScaleFade>

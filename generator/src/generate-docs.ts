@@ -22,8 +22,6 @@ const generateDocs = (fileName: string, outputDir: string, prefix: string) => {
 
     const mapped = json.map((record: Object) => mapKeys(record, (_value, key, value) => camelCase(key)))
 
-
-
     mapped.forEach((mappedJson, index) => {
 
         const {
