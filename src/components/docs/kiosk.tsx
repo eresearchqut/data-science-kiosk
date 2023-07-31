@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import Layout from '@theme/Layout';
@@ -8,6 +8,7 @@ import {
     ChakraProvider,
     Checkbox,
     CheckboxGroup,
+    Code,
     Flex,
     Heading,
     Radio,
@@ -57,6 +58,20 @@ export interface KioskState {
 export default function Kiosk({docMetadata, themes, dataTypes, questionTypes, ...rest}: KioskProps): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
     const [state, setState] = useState<KioskState>({step: "theme"});
+    const [questions, setQuestions] = useState<DocMetadata[]>(docMetadata);
+
+    useEffect(() => {
+        const filtered = docMetadata.filter((meta) => {
+            const {frontMatter} = meta;
+            const {themes, dataTypes, questionType} = frontMatter;
+            const matchesTheme = !state.theme || (themes as string[]).includes(state.theme);
+            const matchesDataType = !state.dataTypes || state.dataTypes.length === 0 || state.dataTypes.filter((dataTypeId) => (dataTypes as string[]).includes(dataTypeId)).length > 0;
+            const matchesQuestionTypes = !state.questionTypes || state.questionTypes.length === 0 || state.questionTypes.filter((questionTypeId) => questionType === questionTypeId).length > 0;
+            return matchesTheme && matchesDataType && matchesQuestionTypes;
+        });
+        setQuestions((current) => filtered);
+    }, [state])
+
     return (
         <Layout
             title={`${siteConfig.title}`}
@@ -153,8 +168,8 @@ export default function Kiosk({docMetadata, themes, dataTypes, questionTypes, ..
                                 </Flex>
                             </ScaleFade>
                         }
-
                     </Stack>
+                    <Code>Matches: {questions.length} questions</Code>
                 </ChakraProvider>
             </div>
         </Layout>

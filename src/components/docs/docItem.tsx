@@ -30,7 +30,7 @@ const Tags: React.FC<TagsPops> = ({frontMatter, attribute, colorScheme}) => {
 }
 
 
-const DocTags: React.FC<Props> = () => {
+const DocTags: React.FC = () => {
     const {frontMatter} = useDoc();
     return (
         <ChakraProvider>
