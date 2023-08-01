@@ -1,9 +1,10 @@
 import React, {FC, PropsWithChildren} from "react";
+import {ChakraProvider} from "@chakra-ui/react";
 
-
-const Root: FC<PropsWithChildren> = ({children}) => {
-    return (<>{children}</>);
+export default function Root({children}) {
+    return (
+        <ChakraProvider resetCSS={false}>
+            {children}
+        </ChakraProvider>
+    );
 }
-
-
-export default Root;
