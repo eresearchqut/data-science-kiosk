@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import {useColorMode} from '@docusaurus/theme-common';
 
 type FeatureItem = {
     title: string;
@@ -11,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
     {
         title: 'Innovation',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        Svg: require('@site/static/img/innovation.svg').default,
         description: (
             <>
                 The main innovation and focus of this project is the triaging and classification of common sports data
@@ -23,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Deliverables and Scope',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        Svg: require('@site/static/img/scope.svg').default,
         description: (
             <>
                 The project will deliver a prototype data science kiosk, a web-based self-help tool where the user can
@@ -35,7 +36,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Objectives',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/img/objectives.svg').default,
         description: (
             <>
                 The overall objective of this project is to collaboratively develop a prototype data science kiosk where
@@ -48,10 +49,13 @@ const FeatureList: FeatureItem[] = [
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
+
+    const {colorMode, setColorMode} = useColorMode();
+
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
-                <Svg className={styles.featureSvg} role="img"/>
+                <Svg className={colorMode === 'dark' ? styles.featureSvgDark : styles.featureSvg} role="img"/>
             </div>
             <div className="text--center padding-horiz--md">
                 <h3>{title}</h3>

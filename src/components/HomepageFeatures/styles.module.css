@@ -8,4 +8,15 @@
 .featureSvg {
   height: 200px;
   width: 200px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+.featureSvgDark {
+  height: 200px;
+  width: 200px;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
