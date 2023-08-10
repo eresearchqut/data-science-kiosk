@@ -110,7 +110,7 @@ const config = {
                                 to: '/kiosk',
                             },
                             {
-                                label: 'All Questinos',
+                                label: 'All Questions',
                                 to: '/docs/category/questions',
                             },
                         ],
